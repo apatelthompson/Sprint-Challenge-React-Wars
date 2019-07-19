@@ -5,4 +5,7 @@ body {
   background-image: url("./sw-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  background-color: rgb(235, 117, 88);
 }

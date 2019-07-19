@@ -1,17 +1,20 @@
 import React from "react";
-// import { Header, Card } from "semantic-ui-react";
+import { Header, Card } from "semantic-ui-react";
 
 const PeopleCard = props => (
   <div className="card">
-    <h2>{props.name}</h2>
-    console.log(props.name)
-    <p className="homeworld">{props.homeworld}</p>
-    <h2>The Lowdown</h2>
-    <p className="height">{props.date}</p>
-    <p className="weight">{props.weight}</p>
-    <p className="hairColor">{props.hairColor}</p>
-    <p className="eyeColor">{props.eyeColor}</p>
-    <p className="birthYear">{props.birthYear}</p>
+    <Card>
+      <Header as="h2">{props.name}</Header>
+      <p className="homeworld">My Homeworld:{props.homeworld}</p>
+      <div className="details">
+        <Header as="h3">All My Stats</Header>
+        <p className="height">Height:{props.height}cm</p>
+        <p className="weight">Weight: {props.weight} kgs</p>
+        <p className="hairColor">Hair Color:{props.hairColor}</p>
+        <p className="eyeColor">Eye Color: {props.eyeColor}</p>
+        <p className="birthYear">Birth Year: {props.birthYear}</p>
+      </div>
+    </Card>
   </div>
 );
 

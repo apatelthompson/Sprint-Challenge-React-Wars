@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import PeopleGrid from "./components/PeopleGrid.js";
+import { Header } from "semantic-ui-react";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -12,8 +13,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <p>Find all your favorite Star Wars people here:</p>
+      <Header as="h1" className="Header">
+        React Wars
+      </Header>
+
+      <p className="intro">Find all your favorite Star Wars people here:</p>
       <PeopleGrid />
     </div>
   );

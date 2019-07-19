@@ -1,24 +1,40 @@
 .App {
   text-align: center;
 }
-.Header {
-  color: #443e3e;
+.ui.header.Header {
+  color: white;
   text-shadow: 1px 1px 5px #fff;
+  background-color: rgb(14, 43, 53);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
 }
 /* write your parent styles in here for your App.js */
-// .card {
-//   background-color: white;
-//   width: 700px;
-//   height: 800px;
-//   margin: 20px 0 0 40px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   align-content: space-around;
-//   border-radius: 10px;
-//   // border: 1px solid indigo;
-//   -moz-box-shadow: 5px 5px 5px 2px #ccc;
-//   -webkit-box-shadow: 5px 5px 5px 2px #ccc;
-//   box-shadow: 5px 5px 5px 2px #ccc;
-//   background-color: rgb(14,43,53);
+
+.intro {
+  background-color: rgb(14, 43, 53);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 1.3rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.ui.card {
+  width: 400px;
+  height: 400px;
+  margin: 20px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  border-radius: 10px;
+  opacity: 0.6;
+  background-color: white;
+}
