@@ -23,13 +23,13 @@ export default function PeopleGrid({ limit }) {
     <div className="people-grid">
       {people.map(info => (
         <PeopleCard
-          key={people.url}
-          name={people.name}
-          height={people.height}
-          weight={people.mass}
-          hairColor={people.hair_color}
-          eyeColor={people.eye_color}
-          birthYear={people.birth_year}
+          key={info.url}
+          name={info.name}
+          height={info.height}
+          weight={info.mass}
+          hairColor={info.hair_color}
+          eyeColor={info.eye_color}
+          birthYear={info.birth_year}
         />
       ))}
     </div>
