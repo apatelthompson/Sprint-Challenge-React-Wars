@@ -18,7 +18,7 @@ const App = () => {
       </Header>
 
       <p className="intro">Find all your favorite Star Wars people here:</p>
-      <PeopleGrid />
+      <PeopleGrid limit={10} />
     </div>
   );
 };

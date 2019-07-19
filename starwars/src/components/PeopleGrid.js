@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PeopleCard from "./PeopleCard";
-import { Header, Card } from "semantic-ui-react";
 
-export default function PeopleGrid() {
+export default function PeopleGrid({ limit }) {
   const [people, setPeople] = useState([]);
   console.log(people);
 
   useEffect(() => {
     axios
-      .get(`https://swapi.co/api/people/1/`)
+      .get(`https://swapi.co/api/people/`)
       .then(response => {
-        console.log(response.data);
-        const results = response.data;
+        console.log(response.data.results);
+        const results = response.data.results;
         setPeople(results);
       })
       .catch(err =>
@@ -22,16 +21,17 @@ export default function PeopleGrid() {
 
   return (
     <div className="people-grid">
-      <PeopleCard
-        key={people.name}
-        name={people.name}
-        height={people.height}
-        weight={people.mass}
-        hairColor={people.hair_color}
-        eyeColor={people.eye_color}
-        birthYear={people.birth_year}
-        homeworld={people.homeworld}
-      />
+      {people.map(info => (
+        <PeopleCard
+          key={people.url}
+          name={people.name}
+          height={people.height}
+          weight={people.mass}
+          hairColor={people.hair_color}
+          eyeColor={people.eye_color}
+          birthYear={people.birth_year}
+        />
+      ))}
     </div>
   );
 }

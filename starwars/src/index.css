@@ -6,6 +6,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 400px;
   background-color: rgb(235, 117, 88);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
