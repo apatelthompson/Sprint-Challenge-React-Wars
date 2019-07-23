@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+  margin-top: 40px;
+}
+.ui.header.Header {
+  color: white;
+  text-shadow: 1px 1px 5px #fff;
+  background-color: rgb(14, 43, 53);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 3rem;
+}
+/* write your parent styles in here for your App.js */
+
+.intro {
+  background-color: rgb(14, 43, 53);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 1.3rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.people-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ui.card {
+  width: 400px;
+  height: 400px;
+  margin: 20px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  border-radius: 10px;
+
+  .cardHeader {
+    background-color: rgb(14, 43, 53);
+    height: 70px;
+    width: 400px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .cardInfo {
+    width: 400px;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 10px;
+    font-family: Lato;
+    font-size: 1.2rem;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+
+    .ui.header {
+      border-bottom: 1px solid rgb(14, 43, 53);
+      padding-bottom: 10px;
+    }
+  }
+}
